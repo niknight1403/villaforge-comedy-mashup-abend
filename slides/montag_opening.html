@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>T–6: Gemeinsame Sprache und Opening</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { width: 1280px; min-height: 720px; background: #e8ecef; color: #2b2d42; font-family: Arial, Helvetica, sans-serif; }
+    .layout { min-height: 720px; display: grid; grid-template-columns: 126px 1fr; }
+    .rail { border-right: 1px solid #2b2d42; display: flex; justify-content: center; align-items: flex-start; padding-top: 62px; }
+    .rail span { writing-mode: vertical-rl; transform: rotate(180deg); color: #d90368; font-size: 14px; font-weight: 900; letter-spacing: 3px; text-transform: uppercase; }
+    .content { padding-top: 54px; padding-left: 52px; padding-right: 62px; display: flex; flex-direction: column; }
+    .topline { display: flex; justify-content: space-between; align-items: flex-start; }
+    .kicker { color: #d90368; font-size: 13px; font-weight: 900; letter-spacing: 2.4px; text-transform: uppercase; }
+    h1 { margin-top: 12px; max-width: 800px; font-size: 43px; line-height: 1.03; letter-spacing: -1.6px; font-weight: 900; }
+    .daymark { color: #f7b801; font-size: 19px; font-weight: 900; letter-spacing: 1px; text-align: right; }
+    .lead { margin-top: 16px; max-width: 820px; color: #4a4c63; font-size: 19px; font-weight: 600; line-height: 1.35; }
+    .lower { margin-top: 39px; display: grid; grid-template-columns: 31% 69%; column-gap: 45px; align-items: stretch; }
+    .minute-panel { min-height: 335px; border-top: 5px solid #d90368; display: flex; flex-direction: column; justify-content: space-between; }
+    .minute-label { padding-top: 20px; color: #4a4c63; font-size: 13px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; }
+    .minute-number { margin-top: 20px; color: #2b2d42; font-size: 116px; line-height: 0.75; font-weight: 900; letter-spacing: -8px; }
+    .minute-unit { margin-top: 13px; color: #d90368; font-size: 21px; font-weight: 900; letter-spacing: 2.5px; text-transform: uppercase; }
+    .minute-note { max-width: 245px; color: #4a4c63; font-size: 15px; line-height: 1.38; font-weight: 600; }
+    .sequence { min-height: 335px; display: grid; grid-template-rows: repeat(4, 1fr); }
+    .row { display: grid; grid-template-columns: 112px 1fr 180px; column-gap: 18px; align-items: center; border-top: 1px solid rgba(43,45,66,0.32); }
+    .time { color: #d90368; font-size: 14px; font-weight: 900; letter-spacing: 1px; }
+    .task { font-size: 19px; font-weight: 900; line-height: 1.1; }
+    .detail { margin-top: 5px; color: #4a4c63; font-size: 13px; line-height: 1.26; font-weight: 600; }
+    .wave { height: 9px; background: #2b2d42; transform: skewX(-29deg); }
+    .wave.magenta { background: #d90368; }
+    .wave.yellow { background: #f7b801; }
+    .close { margin-top: auto; padding-top: 19px; border-top: 1px solid rgba(43,45,66,0.4); display: grid; grid-template-columns: 1fr 360px; column-gap: 34px; align-items: center; }
+    .close-title { color: #d90368; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; font-weight: 900; }
+    .close-text { margin-top: 6px; color: #2b2d42; font-size: 17px; line-height: 1.3; font-weight: 900; }
+    .approval { border-left: 4px solid #f7b801; padding-top: 4px; padding-left: 17px; color: #4a4c63; font-size: 14px; line-height: 1.32; font-weight: 700; }
+    .approval strong { color: #2b2d42; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="layout">
+      <aside class="rail"><span>T–6 · Montag</span></aside>
+      <main class="content">
+        <div class="topline">
+          <div>
+            <div class="kicker">Gemeinsame Sprache · Musikfundament · Auftakt</div>
+            <h1>Ein Opening, das die Regeln<br>des Abends hörbar macht</h1>
+          </div>
+          <div class="daymark">MONTAG<br>PROBENSTART</div>
+        </div>
+        <p class="lead">Leitmotiv, Mashup-Call und Bühnenenergie werden so synchronisiert, dass das Publikum vom ersten Atemzug an versteht: Musik, Figur und Improvisation gehören hier zusammen.</p>
+        <section class="lower">
+          <div class="minute-panel">
+            <div>
+              <div class="minute-label">Dramaturgischer Anker</div>
+              <div class="minute-number">12</div>
+              <div class="minute-unit">Minuten Opening</div>
+            </div>
+            <p class="minute-note">Der Auftakt etabliert musikalische Exzellenz, komödiantisches Risiko und unmittelbare Publikumsnähe.</p>
+          </div>
+          <div class="sequence">
+            <div class="row">
+              <div class="time">10:00–12:30</div>
+              <div><div class="task">Leitmotiv &amp; Mashup-Call</div><div class="detail">Opening-Suite, Tempi, Tonarten und Handzeichen mit Band und Host.</div></div>
+              <div class="wave"></div>
+            </div>
+            <div class="row">
+              <div class="time">13:30–15:30</div>
+              <div><div class="task">Opening · Teil 1</div><div class="detail">Stimme, Bewegung, erster Publikums-Call und Lichtgrundbild bis Minute 7.</div></div>
+              <div class="wave magenta"></div>
+            </div>
+            <div class="row">
+              <div class="time">15:45–17:30</div>
+              <div><div class="task">Opening · Teil 2</div><div class="detail">Figuren-Anrisse, musikalische Signaturen und Gastankündigung.</div></div>
+              <div class="wave yellow"></div>
+            </div>
+            <div class="row">
+              <div class="time">17:30–19:15</div>
+              <div><div class="task">Notes &amp; Tagesbericht</div><div class="detail">Videoanalyse, Priorisierung und höchstens fünf Änderungen für Dienstag.</div></div>
+              <div class="wave magenta"></div>
+            </div>
+          </div>
+        </section>
+        <section class="close">
+          <div><div class="close-title">Freigabe am Tagesende</div><div class="close-text">Ein sicherer Übergang aus dem Opening in Mashup&nbsp;1.</div></div>
+          <div class="approval"><strong>Fix:</strong> Start, Publikums-Call, drei Musikwechsel und Erstgast-Eintritt.<br><strong>Frei:</strong> Figurenfarbe und konkrete Spielimpulse.</div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

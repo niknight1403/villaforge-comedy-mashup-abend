@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Übergabe in die Premiere</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { width: 1280px; min-height: 720px; background: #e8ecef; color: #2b2d42; font-family: Arial, Helvetica, sans-serif; }
+    .layout { min-height: 720px; display: grid; grid-template-columns: 126px 1fr; }
+    .rail { border-right: 1px solid #2b2d42; display: flex; justify-content: center; align-items: flex-start; padding-top: 62px; }
+    .rail span { writing-mode: vertical-rl; transform: rotate(180deg); color: #d90368; font-size: 14px; line-height: 1; font-weight: 900; letter-spacing: 3px; text-transform: uppercase; }
+    .main { min-height: 720px; padding-top: 52px; padding-left: 52px; padding-right: 62px; display: flex; flex-direction: column; position: relative; }
+    .main::before { content: ''; position: absolute; width: 390px; height: 390px; border-radius: 50%; right: 14px; top: 184px; background: rgba(247,184,1,0.22); }
+    .main::after { content: ''; position: absolute; width: 650px; height: 1px; right: -60px; top: 415px; background: rgba(217,3,104,0.55); transform: rotate(-18deg); }
+    .kicker { color: #d90368; font-size: 13px; font-weight: 900; letter-spacing: 2.4px; text-transform: uppercase; position: relative; z-index: 1; }
+    h1 { margin-top: 13px; max-width: 880px; font-size: 43px; line-height: 1.03; letter-spacing: -1.6px; font-weight: 900; position: relative; z-index: 1; }
+    .lead { margin-top: 15px; max-width: 820px; color: #4a4c63; font-size: 18px; line-height: 1.37; font-weight: 600; position: relative; z-index: 1; }
+    .handover { margin-top: 34px; min-height: 310px; width: 790px; position: relative; z-index: 2; }
+    .strand { min-height: 77px; display: grid; grid-template-columns: 147px 1fr; column-gap: 22px; align-items: center; border-top: 1px solid rgba(43,45,66,0.45); }
+    .strand:last-child { border-bottom: 1px solid rgba(43,45,66,0.45); }
+    .strand-id { display: flex; align-items: center; column-gap: 11px; }
+    .index { width: 27px; height: 27px; display: flex; align-items: center; justify-content: center; background: #2b2d42; color: #f7f8fa; font-size: 12px; font-weight: 900; }
+    .strand:nth-child(2) .index { background: #d90368; }
+    .strand:nth-child(3) .index { background: #f7b801; color: #2b2d42; }
+    .strand:nth-child(4) .index { background: #d90368; }
+    .strand-name { color: #2b2d42; font-size: 15px; font-weight: 900; letter-spacing: 0.8px; text-transform: uppercase; }
+    .deliverable { color: #2b2d42; font-size: 18px; line-height: 1.2; font-weight: 900; }
+    .deliverable span { display: block; margin-top: 5px; color: #4a4c63; font-size: 13px; line-height: 1.25; font-weight: 600; }
+    .live-orb { position: absolute; z-index: 3; right: 50px; top: 248px; width: 302px; height: 302px; border-radius: 50%; border: 7px solid #2b2d42; background: rgba(232,236,239,0.82); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+    .live-orb .small { color: #d90368; font-size: 12px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; }
+    .live-orb .big { margin-top: 11px; color: #2b2d42; font-size: 37px; line-height: 0.94; letter-spacing: -1.6px; font-weight: 900; }
+    .live-orb .time { margin-top: 14px; color: #a86e00; font-size: 15px; letter-spacing: 1.4px; font-weight: 900; }
+    .close { margin-top: auto; min-height: 104px; border-top: 1px solid rgba(43,45,66,0.42); padding-top: 18px; display: grid; grid-template-columns: 210px 1fr; column-gap: 28px; align-items: start; position: relative; z-index: 2; }
+    .close-label { color: #d90368; font-size: 13px; line-height: 1.2; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; }
+    .quote { max-width: 700px; color: #2b2d42; font-size: 25px; line-height: 1.17; letter-spacing: -0.6px; font-weight: 900; }
+    .quote strong { color: #d90368; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="layout">
+      <aside class="rail"><span>Übergabe</span></aside>
+      <main class="main">
+        <div class="kicker">Samstagabend · Finale Freigabe</div>
+        <h1>Die Probe endet. Der Live-Moment beginnt.</h1>
+        <p class="lead">Spontaneität ist erst dann eine Stärke, wenn alle entscheidenden Sicherungen dokumentiert, freigegeben und für das gesamte Ensemble verständlich sind.</p>
+        <section class="handover">
+          <div class="strand">
+            <div class="strand-id"><span class="index">01</span><span class="strand-name">Ablauf</span></div>
+            <div class="deliverable">Run-of-Show 2.1<span>Timecodes, Ein- und Abgänge sowie eindeutige Übergaben.</span></div>
+          </div>
+          <div class="strand">
+            <div class="strand-id"><span class="index">02</span><span class="strand-name">Technik</span></div>
+            <div class="deliverable">Cue-Listen inklusive Backups<span>Licht, Ton und Video kennen ihren Auslöser und ihre Reserve.</span></div>
+          </div>
+          <div class="strand">
+            <div class="strand-id"><span class="index">03</span><span class="strand-name">Musik &amp; Formate</span></div>
+            <div class="deliverable">Band-Charts, Notausstiege und Formatkarten<span>Tonarten, Loops und Regeln machen das Risiko spielbar.</span></div>
+          </div>
+          <div class="strand">
+            <div class="strand-id"><span class="index">04</span><span class="strand-name">Bühne &amp; Inhalt</span></div>
+            <div class="deliverable">Presetlisten und Inhaltsfreigaben<span>Requisiten, Mikrofone, Publikumseingaben und sensible Leitplanken stehen.</span></div>
+          </div>
+        </section>
+        <div class="live-orb"><div class="small">Übergabe an</div><div class="big">DIE<br>PREMIERE</div><div class="time">SONNTAG · 20:00</div></div>
+        <section class="close">
+          <div class="close-label">Schlussformel<br>der Finalwoche</div>
+          <div class="quote">„Wir proben nicht, damit nichts passiert. Wir proben, damit <strong>alles passieren kann.</strong>“</div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

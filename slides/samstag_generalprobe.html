@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>T–1: Generalprobe</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { width: 1280px; min-height: 720px; background: #e8ecef; color: #2b2d42; font-family: Arial, Helvetica, sans-serif; }
+    .layout { min-height: 720px; display: grid; grid-template-columns: 126px 1fr; }
+    .rail { border-right: 1px solid #2b2d42; display: flex; justify-content: center; align-items: flex-start; padding-top: 62px; }
+    .rail span { writing-mode: vertical-rl; transform: rotate(180deg); color: #d90368; font-size: 14px; font-weight: 900; letter-spacing: 3px; text-transform: uppercase; }
+    .main { min-height: 720px; padding-top: 51px; padding-left: 52px; padding-right: 62px; display: flex; flex-direction: column; position: relative; }
+    .main::after { content: ''; position: absolute; top: 355px; right: 22px; width: 410px; height: 1px; background: rgba(217,3,104,0.5); transform: rotate(-22deg); }
+    .kicker { color: #d90368; font-size: 13px; font-weight: 900; letter-spacing: 2.4px; text-transform: uppercase; }
+    h1 { margin-top: 13px; font-size: 43px; line-height: 1.02; letter-spacing: -1.6px; font-weight: 900; }
+    .lead { margin-top: 15px; max-width: 860px; color: #4a4c63; font-size: 18px; line-height: 1.36; font-weight: 600; }
+    .body { margin-top: 34px; min-height: 350px; display: grid; grid-template-columns: 35% 65%; column-gap: 46px; }
+    .seal-zone { min-height: 350px; border-top: 7px solid #f7b801; display: flex; flex-direction: column; justify-content: space-between; padding-top: 22px; }
+    .seal-label { color: #d90368; font-size: 13px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; }
+    .seal { width: 245px; height: 245px; border: 9px solid #2b2d42; display: flex; flex-direction: column; align-items: center; justify-content: center; transform: rotate(-4deg); }
+    .seal-top { color: #d90368; font-size: 15px; font-weight: 900; letter-spacing: 2.3px; text-transform: uppercase; }
+    .seal-main { margin-top: 9px; color: #2b2d42; font-size: 31px; line-height: 0.92; font-weight: 900; text-align: center; letter-spacing: -1px; }
+    .seal-sub { margin-top: 12px; color: #4a4c63; font-size: 12px; font-weight: 800; letter-spacing: 1.1px; text-transform: uppercase; }
+    .seal-note { color: #4a4c63; max-width: 300px; font-size: 14px; line-height: 1.33; font-weight: 700; }
+    .sequence { min-height: 350px; border-top: 1px solid #2b2d42; }
+    .row { min-height: 82px; display: grid; grid-template-columns: 105px 1fr 185px; column-gap: 18px; align-items: center; border-bottom: 1px solid rgba(43,45,66,0.3); position: relative; z-index: 1; }
+    .time { color: #d90368; font-size: 15px; font-weight: 900; letter-spacing: 0.6px; }
+    .task { color: #2b2d42; font-size: 18px; line-height: 1.1; font-weight: 900; }
+    .detail { margin-top: 5px; color: #4a4c63; font-size: 13px; line-height: 1.24; font-weight: 600; }
+    .decision { color: #2b2d42; font-size: 13px; line-height: 1.25; font-weight: 800; }
+    .decision strong { display: block; color: #a86e00; font-size: 11px; letter-spacing: 1.1px; text-transform: uppercase; }
+    .footer { margin-top: auto; min-height: 65px; border-top: 1px solid rgba(43,45,66,0.4); padding-top: 17px; display: grid; grid-template-columns: 1fr 460px; column-gap: 36px; }
+    .footer-title { color: #d90368; font-size: 13px; font-weight: 900; letter-spacing: 1.7px; text-transform: uppercase; }
+    .footer-text { margin-top: 5px; color: #2b2d42; font-size: 17px; font-weight: 900; line-height: 1.25; }
+    .lock-rule { color: #4a4c63; font-size: 14px; line-height: 1.32; font-weight: 700; }
+    .lock-rule strong { color: #2b2d42; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="layout">
+      <aside class="rail"><span>T–1 · Samstag</span></aside>
+      <main class="main">
+        <div class="kicker">Generalprobe · Premierenbedingungen</div>
+        <h1>Nicht mehr umbauen.<br>Unter Realbedingungen bestätigen.</h1>
+        <p class="lead">Die Generalprobe ist ein Realitätstest, keine Ideensammlung. Nach ihr sind nur noch Sicherheits-, Verständlichkeits- und technische Korrekturen zulässig.</p>
+        <section class="body">
+          <div class="seal-zone">
+            <div class="seal-label">Status nach T–1</div>
+            <div class="seal">
+              <div class="seal-top">Freigabe</div>
+              <div class="seal-main">PREMIERE<br>BEREIT</div>
+              <div class="seal-sub">Version 2.1</div>
+            </div>
+            <p class="seal-note">Die künstlerische Form ist geschlossen. Jetzt schützt das Team Präzision, Ruhe und gemeinsames Vertrauen.</p>
+          </div>
+          <div class="sequence">
+            <div class="row">
+              <div class="time">11:00–13:00</div>
+              <div><div class="task">Sound, Kostüm, Requisiten, finale Fassung</div><div class="detail">Persönliche Presets und die Generalprobenfassung werden abschließend geprüft.</div></div>
+              <div class="decision"><strong>Entscheidung</strong>Version 2.0 verbindlich</div>
+            </div>
+            <div class="row">
+              <div class="time">15:00–16:00</div>
+              <div><div class="task">Einlasssimulation &amp; Intercom-Check</div><div class="detail">Publikumsweg, Hauslicht, Kommunikation und Crew-Übergaben laufen unter Realbedingungen.</div></div>
+              <div class="decision"><strong>Entscheidung</strong>Publikumsschnittstelle geklärt</div>
+            </div>
+            <div class="row">
+              <div class="time">16:00–18:10</div>
+              <div><div class="task">Generalprobe mit voller Technik</div><div class="detail">Kostüm, Make-up, Licht, Ton, Video, Band und alle Produktionsabläufe werden vollständig simuliert.</div></div>
+              <div class="decision"><strong>Entscheidung</strong>Premiere realistisch bestätigt</div>
+            </div>
+            <div class="row">
+              <div class="time">18:10–19:30</div>
+              <div><div class="task">Kurze Notes &amp; notwendige Fixes</div><div class="detail">Nur Fehler mit Auswirkungen auf Sicherheit, Verständlichkeit oder technische Zuverlässigkeit werden korrigiert.</div></div>
+              <div class="decision"><strong>Entscheidung</strong>Keine kreativen Diskussionen mehr</div>
+            </div>
+          </div>
+        </section>
+        <section class="footer">
+          <div><div class="footer-title">Samstags-Regel</div><div class="footer-text">Bestätigen, dokumentieren, loslassen.</div></div>
+          <div class="lock-rule"><strong>Änderungssperre:</strong> Neue Szenen, neue Songs und neue prominente Gastideen werden nicht mehr aufgenommen. Jede Sonntagsänderung braucht die Freigabe von Regie, Musical Direction und Stage Management.</div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

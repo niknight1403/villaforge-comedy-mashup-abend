@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Finalwoche der Proben</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { width: 1280px; min-height: 720px; background: #16182b; color: #f7f8fa; font-family: Arial, Helvetica, sans-serif; }
+    .hero { min-height: 720px; display: grid; grid-template-columns: 41% 59%; }
+    .copy { min-height: 720px; padding-top: 64px; padding-left: 68px; padding-right: 54px; display: flex; flex-direction: column; justify-content: space-between; }
+    .copy::after { content: ''; height: 42px; flex: 0 0 42px; }
+    .copy { background: linear-gradient(135deg, rgba(21,23,43,0.98), rgba(43,45,66,0.92)); }
+    .eyebrow { color: #f7b801; font-size: 14px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; }
+    h1 { margin-top: 24px; font-size: 58px; line-height: 0.94; letter-spacing: -2.5px; font-weight: 900; }
+    .subtitle { margin-top: 24px; max-width: 385px; color: #e8ecef; font-size: 20px; line-height: 1.35; font-weight: 600; }
+    .quote { max-width: 380px; color: #d9dceb; font-size: 18px; line-height: 1.42; font-weight: 500; }
+    .quote strong { color: #f7b801; }
+    .footer { border-top: 1px solid rgba(247,248,250,0.35); padding-top: 16px; display: flex; align-items: center; justify-content: space-between; color: #dce0e6; font-size: 13px; letter-spacing: 1.1px; }
+    .accent-dot { width: 14px; height: 14px; background: #d90368; display: inline-block; }
+    .image-zone { min-height: 720px; background: radial-gradient(circle at 68% 24%, rgba(247,184,1,0.95) 0 2%, rgba(247,184,1,0.18) 3% 17%, transparent 29%), radial-gradient(circle at 76% 52%, rgba(217,3,104,0.78) 0 2%, rgba(217,3,104,0.16) 3% 19%, transparent 31%), linear-gradient(135deg, #0f1124 0%, #222645 54%, #15172d 100%); display: flex; flex-direction: column; justify-content: flex-end; }
+    .image-caption { margin: 0 42px 40px auto; width: 240px; border-left: 2px solid #f7b801; padding-top: 10px; padding-left: 14px; color: #ffffff; background: rgba(21,23,43,0.55); font-size: 12px; line-height: 1.35; letter-spacing: 1px; text-transform: uppercase; }
+    .line { margin: 0 42px 20px auto; width: 185px; height: 2px; background: #d90368; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="hero">
+      <section class="copy">
+        <div>
+          <div class="eyebrow">Produktions- &amp; Probenplan</div>
+          <h1>Finalwoche<br>der Proben</h1>
+          <p class="subtitle">„Teddy &amp; Friends – Der Mashup-Abend des Jahrhunderts“</p>
+        </div>
+        <div>
+          <p class="quote">Wir proben nicht, damit nichts passiert. Wir proben, damit <strong>alles passieren kann.</strong></p>
+          <div class="footer"><span>T–7 → T–0</span><span>Premiere · Sonntag · 20:00</span><span class="accent-dot"></span></div>
+        </div>
+      </section>
+      <section class="image-zone">
+        <div class="line"></div>
+        <div class="image-caption">Vom ersten Cue<br>bis zum Live-Moment</div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>T–5: Regelklarheit vor Gag-Dichte</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { width: 1280px; min-height: 720px; background: #e8ecef; color: #2b2d42; font-family: Arial, Helvetica, sans-serif; }
+    .layout { min-height: 720px; display: grid; grid-template-columns: 126px 1fr; }
+    .rail { border-right: 1px solid #2b2d42; display: flex; justify-content: center; align-items: flex-start; padding-top: 61px; }
+    .rail span { writing-mode: vertical-rl; transform: rotate(180deg); color: #d90368; font-size: 14px; line-height: 1; font-weight: 900; letter-spacing: 3px; text-transform: uppercase; }
+    .main { min-height: 720px; padding-top: 49px; padding-left: 50px; padding-right: 62px; display: flex; flex-direction: column; }
+    .kicker { color: #d90368; font-size: 13px; font-weight: 900; letter-spacing: 2.2px; text-transform: uppercase; }
+    h1 { margin-top: 12px; max-width: 875px; font-size: 43px; line-height: 1; letter-spacing: -1.6px; font-weight: 900; }
+    .lead { margin-top: 16px; max-width: 910px; color: #4c4f67; font-size: 18px; line-height: 1.35; font-weight: 600; }
+    .formats { margin-top: 32px; min-height: 324px; display: grid; grid-template-columns: 1fr 1fr; column-gap: 46px; }
+    .format { min-height: 324px; border-top: 7px solid #2b2d42; padding-top: 20px; position: relative; }
+    .format:nth-child(2) { border-top-color: #d90368; }
+    .number { color: #d90368; font-size: 15px; font-weight: 900; letter-spacing: 2px; }
+    .format:nth-child(2) .number { color: #f7b801; }
+    h2 { margin-top: 9px; max-width: 420px; font-size: 29px; line-height: 1.03; letter-spacing: -0.8px; font-weight: 900; }
+    .task { margin-top: 15px; max-width: 450px; font-size: 16px; line-height: 1.38; color: #4a4c63; font-weight: 600; }
+    .check { margin-top: 21px; width: 420px; display: grid; grid-template-columns: 28px 1fr; column-gap: 12px; align-items: start; }
+    .mark { width: 20px; height: 20px; background: #f7b801; margin-top: 1px; }
+    .check strong { display: block; color: #2b2d42; font-size: 12px; font-weight: 900; letter-spacing: 1.3px; text-transform: uppercase; }
+    .check p { margin-top: 4px; color: #4a4c63; font-size: 14px; line-height: 1.25; font-weight: 700; }
+    .diagonal { position: absolute; width: 150px; height: 1px; background: #d90368; transform: rotate(-28deg); right: 14px; top: 159px; }
+    .format:nth-child(2) .diagonal { background: #f7b801; transform: rotate(28deg); left: 15px; }
+    .run { margin-top: 12px; border-top: 1px solid rgba(43,45,66,0.45); padding-top: 18px; display: grid; grid-template-columns: 154px 1fr 190px; column-gap: 24px; align-items: center; }
+    .run-label { color: #d90368; font-size: 13px; font-weight: 900; line-height: 1.2; letter-spacing: 1.5px; text-transform: uppercase; }
+    .run-line { height: 22px; display: grid; grid-template-columns: 12% 33% 8% 38% 9%; align-items: center; }
+    .run-line span { height: 3px; background: #2b2d42; display: block; }
+    .run-line span:nth-child(2) { background: #d90368; }
+    .run-line span:nth-child(4) { background: #d90368; }
+    .run-line span:nth-child(3), .run-line span:nth-child(5) { height: 12px; background: #f7b801; }
+    .run-result { color: #2b2d42; font-size: 13px; line-height: 1.25; font-weight: 800; }
+    .times { margin-top: auto; border-top: 1px solid rgba(43,45,66,0.35); padding-top: 15px; display: flex; justify-content: space-between; color: #4a4c63; font-size: 13px; font-weight: 800; }
+    .times strong { color: #d90368; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="layout">
+      <aside class="rail"><span>T–5 · Dienstag</span></aside>
+      <main class="main">
+        <div class="kicker">Erste Showhälfte · Formatentwicklung</div>
+        <h1>Regelklarheit vor Gag-Dichte</h1>
+        <p class="lead">Die ersten beiden Mashups werden nicht „fertig gewitzelt“. Sie werden so gebaut, dass ihre Dynamik auch mit wechselndem Input, Tempo und Publikum sicher trägt.</p>
+        <section class="formats">
+          <article class="format">
+            <div class="number">FORMAT 01</div>
+            <h2>Dialekt der Gefühle</h2>
+            <p class="task">Ausgangslage, Temperaturwechsel, Sprachtausch und gemeinsamer Chorus werden als eine klare Spielkette geprobt.</p>
+            <div class="check"><span class="mark"></span><div><strong>Freigabe</strong><p>Zwei belastbare Varianten mit unterschiedlichem Publikumsinput.</p></div></div>
+            <div class="diagonal"></div>
+          </article>
+          <article class="format">
+            <div class="number">FORMAT 02</div>
+            <h2>Musical ohne Sicherheitsnetz</h2>
+            <p class="task">Szenenwahrheit, Störfigur, Duett-Wendung und Schlussgag erhalten jeweils einen musikalisch sicheren Übergabepunkt.</p>
+            <div class="check"><span class="mark"></span><div><strong>Freigabe</strong><p>Die Musik trägt mindestens 30 Sekunden – ohne Pointe als Sicherheitsnetz.</p></div></div>
+            <div class="diagonal"></div>
+          </article>
+        </section>
+        <section class="run">
+          <div class="run-label">17:30<br>Micro-Run</div>
+          <div class="run-line"><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="run-result">Opening → Mashup 1 → Übergang → Mashup 2<br><strong>Erste 46 Minuten verbunden.</strong></div>
+        </section>
+        <div class="times"><span><strong>10:00</strong> Warm-up</span><span><strong>12:30</strong> Mashup 1 abgeschlossen</span><span><strong>15:15</strong> Mashup 2 beginnt</span><span><strong>17:30</strong> Verbindungslauf</span></div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

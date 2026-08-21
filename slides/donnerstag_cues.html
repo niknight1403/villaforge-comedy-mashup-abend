@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>T–3: Cue-to-Cue</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { width: 1280px; min-height: 720px; background: #e8ecef; color: #2b2d42; font-family: Arial, Helvetica, sans-serif; }
+    .layout { min-height: 720px; display: grid; grid-template-columns: 126px 1fr; }
+    .rail { border-right: 1px solid #2b2d42; display: flex; justify-content: center; align-items: flex-start; padding-top: 61px; }
+    .rail span { writing-mode: vertical-rl; transform: rotate(180deg); color: #d90368; font-size: 14px; line-height: 1; font-weight: 900; letter-spacing: 3px; text-transform: uppercase; }
+    .main { min-height: 720px; padding-top: 50px; padding-left: 52px; padding-right: 60px; display: flex; flex-direction: column; position: relative; }
+    .main::before { content: ''; position: absolute; width: 425px; height: 425px; border-radius: 50%; background: rgba(217,3,104,0.08); right: 55px; top: 122px; }
+    .main::after { content: ''; position: absolute; width: 635px; height: 1px; background: rgba(43,45,66,0.28); right: -65px; top: 276px; transform: rotate(-17deg); }
+    .kicker { color: #d90368; font-size: 13px; font-weight: 900; letter-spacing: 2.4px; text-transform: uppercase; position: relative; z-index: 1; }
+    h1 { margin-top: 13px; font-size: 43px; line-height: 1.03; letter-spacing: -1.6px; font-weight: 900; position: relative; z-index: 1; }
+    .lead { margin-top: 15px; max-width: 835px; color: #4b4d64; font-size: 18px; line-height: 1.36; font-weight: 600; position: relative; z-index: 1; }
+    .cue-rule { margin-top: 24px; color: #2b2d42; font-size: 14px; line-height: 1.3; font-weight: 800; letter-spacing: 0.2px; position: relative; z-index: 1; }
+    .cue-rule strong { color: #d90368; text-transform: uppercase; letter-spacing: 1.1px; }
+    .lanes { margin-top: 22px; min-height: 266px; position: relative; z-index: 1; }
+    .lane { min-height: 88px; display: grid; grid-template-columns: 140px 1fr 240px; column-gap: 25px; align-items: center; border-top: 1px solid rgba(43,45,66,0.42); }
+    .lane:last-child { border-bottom: 1px solid rgba(43,45,66,0.42); }
+    .time { color: #d90368; font-size: 18px; font-weight: 900; letter-spacing: 0.4px; }
+    .chapter { font-size: 21px; line-height: 1.05; font-weight: 900; letter-spacing: -0.5px; }
+    .chapter span { display: block; margin-top: 6px; color: #4b4d64; font-size: 13px; line-height: 1.28; font-weight: 600; letter-spacing: 0; }
+    .result { min-height: 54px; background: #2b2d42; color: #f7f8fa; padding-top: 11px; padding-left: 15px; padding-right: 15px; font-size: 13px; line-height: 1.25; font-weight: 700; }
+    .result strong { display: block; color: #f7b801; font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase; }
+    .backup { margin-top: auto; min-height: 108px; background: #2b2d42; color: #f7f8fa; padding-top: 17px; padding-left: 22px; padding-right: 24px; display: grid; grid-template-columns: 190px 1fr 1fr 1fr; column-gap: 20px; align-items: start; position: relative; z-index: 1; }
+    .backup-title { color: #f7b801; font-size: 12px; font-weight: 900; letter-spacing: 1.8px; line-height: 1.25; text-transform: uppercase; }
+    .test { border-top: 2px solid #d90368; padding-top: 9px; font-size: 13px; line-height: 1.22; font-weight: 700; }
+    .test strong { display: block; color: #f7b801; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
+    .footer { margin-top: 13px; color: #4b4d64; font-size: 12px; line-height: 1.25; letter-spacing: 0.9px; display: flex; justify-content: space-between; }
+    .footer strong { color: #d90368; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="layout">
+      <aside class="rail"><span>T–3 · Donnerstag</span></aside>
+      <main class="main">
+        <div class="kicker">Technische Integration · Run-of-Show 1.0</div>
+        <h1>Cue-to-Cue:<br>Jede Abteilung kennt ihren nächsten Einsatz</h1>
+        <p class="lead">Der technische Tag optimiert nicht die Unterhaltung. Er macht die Show präzise, wiederholbar und ausfallsicher – damit Band, Bühne und Spielende dieselbe Sprache sprechen.</p>
+        <p class="cue-rule"><strong>Arbeitsregel:</strong> Sobald Satz, Musikwechsel, Lichtwechsel oder Umbau sicher sitzt, springt die Probe weiter.</p>
+        <section class="lanes">
+          <div class="lane">
+            <div class="time">10:45–12:30</div>
+            <div class="chapter">Block 1 · Auftakt &amp; erste Hälfte<span>Preset, Opening, Mashup 1 und Mashup 2.</span></div>
+            <div class="result"><strong>Ergebnis</strong>Eindeutiger Cue-Fahrplan</div>
+          </div>
+          <div class="lane">
+            <div class="time">13:30–15:30</div>
+            <div class="chapter">Block 2 · Publikum &amp; zweite Hälfte<span>Publikumsteil, Mashup 3, Mashup 4 und Finalbrücke.</span></div>
+            <div class="result"><strong>Ergebnis</strong>Übergaben auf Zeit und Inhalt geprüft</div>
+          </div>
+          <div class="lane">
+            <div class="time">15:45–17:15</div>
+            <div class="chapter">Block 3 · Schlussbild<span>Finale, Verbeugung, Hauslicht sowie Zugaben- und Evakuierungslogik.</span></div>
+            <div class="result"><strong>Ergebnis</strong>Lückenloses Schlussbild</div>
+          </div>
+        </section>
+        <section class="backup">
+          <div class="backup-title">Backup-Test<br>ab 17:15</div>
+          <div class="test"><strong>Störung 01</strong>Funkmikrofon fällt aus</div>
+          <div class="test"><strong>Störung 02</strong>Gastauftritt verspätet sich</div>
+          <div class="test"><strong>Störung 03</strong>Publikumsreaktion verlängert sich</div>
+        </section>
+        <div class="footer"><span><strong>Ab Donnerstag:</strong> Änderungen nur noch als dokumentierte Sicherheits- oder Verständlichkeitskorrektur.</span><span>CUE → GO → HOLD → BACKUP</span></div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
