@@ -1,0 +1,10 @@
+{
+  "name": "comedy-mashup-abend",
+  "version": "1.0.0",
+  "description": "Autonome Show-Produktion",
+  "scripts": {
+    "build": "echo 'Build: Validating project structure...'; ls -R src docs slides tests",
+    "test": "python3 -m unittest discover tests",
+    "smoke": "python3 src/premiere_readiness_dashboard.py --check"
+  }
+}
